@@ -1,0 +1,79 @@
+mat-sidenav-container {
+    height: 100vh;
+}
+
+mat-sidenav {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    min-width: 230px;
+    background-color: var(--sidebarColor);
+}
+
+mat-sidenav-content {
+    background-color: var(--sidebarColor);
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius:10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    } 
+}
+
+.navbar {
+    min-height: 7vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu {
+        margin: 2px 20px 0px;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__login {
+        display: flex;
+
+        &--text {
+            margin-top: 6px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+
+        &--imgContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 20px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    }
+
+
+}
+
+.sidenav {
+    &__content {
+        padding-top: .5rem;
+    }
+    &__logo {
+        width: 11rem;
+        margin: auto;
+        img {
+            width: 100%;
+        }
+    }
+}
+.content {
+    // Padding for making content visible due to navbar
+    padding: 1rem;
+}
